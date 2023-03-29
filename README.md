@@ -1,3 +1,26 @@
+# tenter-demo
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+
 ## 问题1：
   请编写一个函数 twoSum(nums, target)，其中 nums 是一个整数数组，target 是一个整数目标值，函数应该返回一个数组，其中包含两个数字的索引，这两个数字的和等于 target。
 
