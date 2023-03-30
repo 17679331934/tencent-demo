@@ -4,6 +4,8 @@
       <button @click="handelclick">输出结果</button>
     <h3>面试题二</h3>
     <Count />
+     <h3>面试题四</h3>
+     <router-link to="/activity">activity</router-link>
   </div>
 </template>
 
