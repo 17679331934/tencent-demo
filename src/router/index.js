@@ -13,7 +13,7 @@ const routes = [
   {
     path: '/activity',
     name: 'Activity',
-    component: () => import( '../page/activity.vue')
+    component: () => import( '../page/activity/activity.vue')
   }
 ]
 

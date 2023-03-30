@@ -1,4 +1,5 @@
 <template>
+  <!-- 实现的dropdown因为时间原因有很多不足 有机会可以口述补充。。。。 -->
   <div class="dropdown-view" id="dropdown">
     <div class="dropdown-box" @click="showClick">
       <span>{{ selectData[current]}}</span>
@@ -21,7 +22,7 @@
 export default {
   props: {
     selectData: Array,
-    isClick: Boolean
+    isClick: Boolean  // 默认hover展开
   },
   data() {
     return {
@@ -34,6 +35,7 @@ export default {
       return `article${value}`
     },
     getDropStyle() {
+      if (!this.isClick) return
       if (this.isShow) {
         return 'transform: scaleY(1)'
       } else {
@@ -42,6 +44,7 @@ export default {
       
     },
     getIconStyle() {
+      if (!this.isClick) return
       if (this.isShow) {
         return 'transform: rotate(45deg);'
       } else {
@@ -67,6 +70,7 @@ export default {
     padding-left: 10px;
     position: relative;
     width: 100px;
+    cursor: pointer;
   }
   .dropdown-box {
     display: flex;
@@ -101,6 +105,7 @@ export default {
     width: 100px;
     border-radius: 5px;
     box-sizing: border-box;
+    cursor: pointer;
     padding: 10px 0;
     transform: scaleY(0);
     transition: 0.2s;
@@ -113,6 +118,7 @@ export default {
     width: 100%;
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
   .drop-label {
     width: 100%;

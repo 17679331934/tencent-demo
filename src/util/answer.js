@@ -4,12 +4,15 @@ export const twoSum = function(nums, target) {
   let n = nums.length;
   let rows = [];
   for (let i = 0; i < n; i ++) {
-    for (let j = 0; j < n; i ++) {
+    for (let j = 0; j < n; j ++) {
+      console.log(i, j)
       if (nums[i] + nums[j] === target) {
         rows.push(i, j);
-        return rows;
+        console.log(rows)
+        return rows
       }
     }
   }
+  return '无结果'
 };
 
