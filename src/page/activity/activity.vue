@@ -12,7 +12,7 @@
       </el-row>
     </div>
     <div v-else>
-      <div class="Horizontal_goback">
+      <div class="Horizontal_goback" @click="goBack">
         <img src="../../assets/gobackLogo.png" alt="">
       </div>
     </div>
